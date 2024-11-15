@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Full_Games</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="topheader">
+        <a href="" class="logo">
+            <img height="84" width="90" src="img/logo2.png" alt="Logo de Full Games" />
+        </a>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="">JUEGOS</a>
+                <ul class="menu-vertical">
+                    <li><a href="">ACCION</a></li>
+                    <li><a href="">AVENTURA</a></li>
+                    <li><a href="">DEPORTES</a></li>
+                    <li><a href="">ESTRATEGIA</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">EQUIPOS</a>
+                <ul class="menu-vertical">
+                    <li><a href="">DOTA 2</a></li>
+                    <li><a href="">VALORANT</a></li>
+                    <li><a href="">League of Legends</a></li>
+                    <li><a href="">Counter-Strike</a></li>
+                    <li><a href="">Overwatch</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">PROMOCIONES</a>
+                <ul class="menu-vertical">
+                    <li><a href="">Descuentos</a></li>
+                    <li><a href="">Ofertas semanales</a></li>
+                    <li><a href="">Paquetes Especiales</a></li>
+                    <li><a href="">Recompensas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">NOTICIAS</a>
+                <ul class="menu-vertical">
+                    <li><a href="">Últimas Noticias</a></li>
+                    <li><a href="">Eventos</a></li>
+                    <li><a href="">Actualizaciones</a></li>
+                    <li><a href="">Entrevistas</a></li>
+                </ul>
+            </li>
+            <li><a href="">SOBRE NOSOTROS</a></li>
+            <li><a href="#Section-Inscripcion">Inscripcion</a></li>
+        </ul>
+    </nav>
+
+    <!--SECTION ¡Explora -->
+    <section class="fullgames-section">
+        <div class="content-fullgames">
+            <div class="text-video">
+                <h2>
+                    ¡Explora cientos de juegos, mira transmisiones en vivo de
+                    desarrolladores y chatea sobre juegos en progreso en Steam!
+                </h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T5WV8qqalew" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="full-info">
+                <h2>Conoce a Full Games</h2>
+                <h3>Apasionados por el juego, dedicados a la comunidad</h3>
+
+                <h4>Nuestra Misión</h4>
+                <p>
+                    "Crear una comunidad donde los jugadores no solo encuentren todo
+                    sobre sus juegos favoritos, sino también un espacio donde puedan
+                    compartir, debatir y colaborar. Nos esforzamos por mantenerlos al
+                    tanto con las últimas noticias, lanzamientos, y análisis detallados
+                    de juegos y equipos."
+                </p>
+                <h4>Nuestra Visión</h4>
+                <p>
+                    "Sueñamos con ser el portal líder para entusiastas de videojuegos,
+                    ofreciendo contenido de calidad y un espacio seguro para el diálogo
+                    y la expresión creativa."
+                </p>
+                <h4>¿Quiénes Somos?</h4>
+                <p>
+                    "Somos un equipo de jugadores veteranos, desarrolladores y
+                    periodistas dedicados al mundo de los videojuegos. Desde análisis
+                    técnicos hasta noticias de última hora, nuestro equipo está en el
+                    corazón de la industria para traerte contenido fresco y relevante."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--INCRIBETE -->
+    <section class="Inscripcion-Section">
+        <div id="Section-Inscripcion">
+            <div class="Container-Inscripcion">
+                <form name="frm" method="post" action="">
+                    <fieldset id="form">
+                        <legend>Unete a Full Games</legend>
+                        <ol>
+                            <li>
+                                <label>Nombre Usuario:</label><input type="text" name="fname" size="30" />
+                            </li>
+                            <li>
+                                <label>Fecha de nacimiento::</label><input type="text" name="flastname" size="30" />
+                            </li>
+
+                            <li>
+                                <label>Sexo:</label><input type="radio" name="fsex" value="H" />Hombre
+                                <input type="radio" name="fsex" value="F" />Mujer
+                            </li>
+
+                            <li>
+                                <label>Correo_Electronico:</label><input type="text" name="femal" size="30" />
+                            </li>
+                            <li>
+                                <label>Celular:</label><input type="text" name="fphone" size="30" />
+                            </li>
+                            <li>
+                                <label>Juego Preferidas:</label>
+                                <select>
+                                    <option>DOTA 2</option>
+                                    <option>VALORANT</option>
+                                    <option>Counter-Strike</option>
+                                    <option>Overwhatch</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>Plataformas de Juego Preferido:</label>
+
+                                <input type="checkbox" name="option1" />PC
+                                <input type="checkbox" name="option2" />PlayStation
+                                <input type="checkbox" name="option3" />Xbox
+                                <input type="checkbox" name="option4" />Nintendo
+                            </li>
+                            <li>
+                                <label for="message">Mensaje de Interes:</label>
+                                <textarea id="message" name="message" rows="5" cols="28"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </li>
+                        </ol>
+                        <p>
+                            <input type="submit" class="btn-form-insc" value="Enviar" />
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE REDES SOCIALES -->
+    <section class="social-media-section">
+        <div class="Container_SN">
+            <ul class="Banner_SN">
+                <li>
+                    <img src="img/icons8-facebook-64.png" width="32" height="32" alt="Facebook Icon" />
+                    <p>
+                        <a href="https://www.facebook.com" target="_blank">Danos un like<br />Facebook</a>
+                    </p>
+                </li>
+                <li>
+                    <img src="img/icons8-twitter-100.png" width="32" height="32" alt="Twitter Icon" />
+                    <p>
+                        <a href="https://www.twitter.com" target="_blank">Síguenos<br />Twitter</a>
+                    </p>
+                </li>
+                <li>
+                    <img src="img/icons8-tik-tok-40.png" width="32" height="32" alt="TikTok Icon" />
+                    <p>
+                        <a href="https://www.tiktok.com" target="_blank">Síguenos<br />TikTok</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Acerca de Full Games</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Steamworks</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ayuda y Soporte</h3>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos en Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">WhatsApp.</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Información Legal</h3>
+                <ul>
+                    <li>
+                        <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_new">
+                            Política de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="_new">
+                            Acuerdo de Suscriptor a Steam</a>
+                    </li>
+                    <li>
+                        <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_"
+                            target="_new">Reembolsos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-line" />
+        <div class="footer-bottom">
+            <p>@2024 Full Games. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>

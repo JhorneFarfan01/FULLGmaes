@@ -1,0 +1,356 @@
+/* ESTILOS GENERALES FULLGAMES*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #17fff0;
+    background-color: rgb(38, 38, 38);
+    overflow-x: hidden;
+    /* Evitar desbordamiento horizontal */
+}
+
+/*HEADER (Encabezado menú horizontal)*/
+.topheader {
+    position: fixed;
+    background-color: #800080;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-horizontal li a:hover {
+    color: #00ff00;
+}
+
+.menu-vertical {
+    padding: 0;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 180px;
+    background-color: #9c009c;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li a:hover {
+    background-color: #24282c;
+}
+
+/*SECCION VIDEO*/
+.fullgames-section {
+    background-color: rgb(38, 38, 38);
+    padding: 100px;
+    margin-top: 100px;
+    /* Espacio para evitar superposición con el encabezado */
+}
+
+.content-fullgames {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.text-video {
+    width: 45%;
+}
+
+.text-video h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #17fff0, 0 0 5px #17fff0, 0 0 10px #17fff0, 0 0 15px #17fff0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.full-info {
+    width: 50%;
+}
+
+.full-info h3,
+h2 {
+    color: #17fff0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.full-info h4 {
+    color: #00ff00;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.full-info p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/*SECCION FORMULARIO*/
+.Inscripcion-Section {
+    background-color: rgb(57, 56, 56);
+    padding-top: 30px;
+}
+
+.Container-Inscripcion {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #2e2e2e;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+form fieldset {
+    border: 2px solid #9c009c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 2px;
+}
+
+form ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+form li {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    vertical-align: middle;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    padding: 4px;
+    font-size: 1rem;
+    border: 1px solid #4e52ad;
+    border-radius: 5px;
+    width: calc(30ch + 16px);
+}
+
+form input[type="radio"] {
+    margin-left: 10px;
+}
+
+form .btn-form-insc {
+    background-color: #9c009c;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form .btn-form-insc:hover {
+    background-color: #4e52ad;
+    color: #cac7c7;
+}
+
+form fieldset p {
+    text-align: center;
+}
+
+/*PIE*/
+.footer-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #9c009c;
+    padding-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-line {
+    border: 0;
+    height: 2px;
+    background-color: #9c009c;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 2px #800080, 0 0 4px #800080, 0 0 6px #800080;
+}
+
+/* Redes Sociales */
+.Container_SN {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: -130px;
+    top: 230px;
+    width: 210px;
+    z-index: 1100;
+}
+
+.Banner_SN li {
+    list-style-type: none;
+    opacity: 1;
+    color: blue;
+    height: 43px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.Banner_SN li:hover {
+    margin-left: -115px;
+}
+
+.Banner_SN li img {
+    float: left;
+    margin: 5px 5px;
+    margin-right: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Banner_SN li p {
+    padding-top: 5px;
+    margin: 0;
+    line-height: 16px;
+    font-size: 10px;
+}
+
+.Banner_SN li p a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.Banner_SN li p a:hover {
+    color: #5555ff;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* Cambiar disposición del menú horizontal a vertical en pantallas pequeñas */
+    .menu-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-horizontal li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-horizontal li a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* Añadir margen superior al contenido para evitar superposición con el encabezado */
+    .fullgames-section {
+        margin-top: 100px;
+    }
+
+    /* Ajustes en otros elementos para pantallas pequeñas */
+    .Container_SN {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
